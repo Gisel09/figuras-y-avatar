@@ -1,0 +1,237 @@
+.fila {
+    width: 80%;
+    max-width: 1200px;
+    height: 600px;
+    border: 2px solid rgb(86, 86, 196);
+    margin: 0 auto;
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+}
+
+.fila .cont-btn {
+    width: 50%;
+    height: 85%;
+    background-color: rgb(145, 84, 173);
+    padding: 45px 30px;
+    text-align: center;
+}
+
+.fila .cont-btn h2 {
+    color: black;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+button {
+    padding: 8px 15px;
+    font-size: 22px;
+    border: 1px solid black;
+    margin: 10px 14px;
+    background: rgb(0, 0, 0);
+    color: rgb(214, 156, 156);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(49, 3, 61, 0.788);
+}
+
+.fila .cont-fig {
+    width: 50%;
+    height: 85%;
+    background-color: rgb(81, 186, 235);
+    padding-top: 48px;
+    text-align: center;
+}
+
+.fila .cont-fig h2 {
+    color: black;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.fila .cont-fig #figura {
+    width: 300px;
+    height: 300px;
+    background: rgb(3, 3, 3);
+    margin: 0 auto;
+    transition: 2s;
+    margin-top: 60px;
+}
+
+.fila .cont-fig #figura.cuadrado {
+    transform: rotate(-360deg);
+    transition: 2s;
+}
+
+.fila .cont-fig #figura.circulo {
+    border-radius: 50%;
+    transform: rotate(360deg);
+    transition: 2s;
+}
+
+.fila .cont-fig #figura.arriba {
+    transform: translatey(-60px);
+}
+
+.fila .cont-fig #figura.abajo {
+    transform: translatey(60px);
+}
+
+.fila .cont-fig #figura.izquierda {
+    transform: translatex(-50px);
+}
+
+.fila .cont-fig #figura.derecha {
+    transform: translatex(50px);
+}
+
+.fila .cont-fig #figura.imagen {
+    background-image: url("../img/img.gif");
+}
+
+.fila .cont-fig #figura.supizq {
+    transform: translate(-50px, -60px);
+}
+
+.fila .cont-fig #figura.infder {
+    transform: translate(50px, 60px);
+}
+
+.fila .cont-fig #figura.rectanguloHorizontal {
+    width: 400px;
+    height: 200px;
+}
+
+.fila .cont-fig #figura.rectanguloVertical {
+    height: 350px;
+    width: 200px;
+}
+
+.fila .cont-fig #figura.rombo {
+    width: 230px;
+    height: 230px;
+    -webkit-transform: rotate(45deg) skew(15deg, 15deg);
+    -moz-transform: rotate(45deg) skew(15deg, 15deg);
+    -ms-transform: rotate(45deg) skew(15deg, 15deg);
+    -o-transform: rotate(45deg) skew(15deg, 15deg);
+    transform: rotate(45deg) skew(15deg, 15deg) translate(40px, 20px);
+}
+
+.fila2 {
+    margin-top: 10px;
+    text-align: right;
+    margin-right: 117px;
+}
+
+.formulario {
+    display: none;
+}
+
+.filaFormulario {
+    width: 80%;
+    max-width: 1200px;
+    height: 680px;
+    border: 2px solid rgba(219, 23, 193, 0.37);
+    margin: 0 auto;
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+}
+
+.filaFormulario .cont-datos {
+    width: 45%;
+    height: 85%;
+    background-color: rgba(41, 160, 37, 0.774);
+    padding: 51px 30px;
+    text-align: center;
+    
+}
+
+.filaFormulario .cont-datos h2 {
+    background-color: rgba(148, 214, 93, 0.884);
+    color: black;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.filaFormulario .cont-avatar {
+    width: 45%;
+    height: 85%;
+    background-color: rgb(110, 69, 185);
+    padding: 51px 30px;
+    text-align: center;
+}
+
+.filaFormulario .cont-avatar h2 {
+    background-color: rgb(192, 110, 240);
+    color: black;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    margin-top: -20px;
+}
+
+label {
+    color: white;
+    font-weight: bold;
+    display: flex;
+    margin: 2px 65px;
+    font-size: 22px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+input {
+    margin-left: 15px;
+    width: 350px;
+    height: 20px;
+    margin-bottom: 5px;
+}
+
+select {
+    margin-left: 15px;
+    width: 357px;
+    height: 27px;
+    margin-bottom: 5px;
+}
+
+.inputDate {
+    width: 353px;
+    height: 24px;
+}
+
+textarea {
+    margin-left: 15px;
+    resize: none;
+    height: 60px;
+    width: 350px;
+    margin-bottom: 3px;
+}
+
+img {
+    width:140px;
+    height: 140px;
+}
+
+output {
+    color: rgb(80, 68, 68);
+    margin-left: 65px;
+    width: 100px;
+    height: 16px;
+    margin-bottom: 5px;
+    display: flex;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.textareaOutput{
+    margin-left: 15px;
+    resize: none;
+    height: 45px;
+    width: 350px;
+    margin-bottom: 3px;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Mariana</title>
+    <script src="js/figuras_y_avatar.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="figuras">
+        <div id="fila" class="fila">
+            <div class="cont-btn">
+                <h2>
+                    ACCIONES
+                </h2>
+                <button onclick="formarCuadrado();">CUADRADO</button>
+                <button onclick="formarCirculo();">CIRCULO</button>
+                <button onclick="trasladarFiguraArriba();">ARRIBA</button>
+                <button onclick="trasladarFiguraAbajo();">ABAJO</button>
+                <button onclick="trasladarFiguraIzquierda();">IZQUIERDA</button>
+                <button onclick="trasladarFiguraDerecha();">DERECHA</button>
+                <button onclick="cambiarImagen();">IMAGEN</button>
+                <button onclick="trasladarsuperiorIzquierda();">DIAG.ARRIBA.IZQUIERDA</button>
+                <button onclick="trasladarInferiorDerecha();">DIAG.ABAJO.DERECHA</button>
+                <button onclick="formarRectanguloHorizontal();">RECTANGULO HORIZONTAL</button>
+                <button onclick="formarRectanguloVertical();">RECTANGULO VERTICAL</button>
+                <button onclick="formarRombo();">ROMBO</button>
+            </div>
+            <div class="cont-fig">
+                <h2>
+                    FIGURAS
+                </h2>
+                <div id="figura">
+                </div>
+            </div>
+        </div>
+        <div id="fila2" class="fila2">
+            <button onclick="irAlFormularioAvatar();">FORMULARIO PARA AVATAR</button>
+        </div>
+    </div>
+    <div id="formulario" class="formulario">
+        <div id="fila" class="filaFormulario">
+            <div class="cont-datos">
+                <h2>
+                    INGRESE SUS DATOS PERSONALES
+                </h2>
+
+                <label for="nombres">Nombres</label>
+                <input type="text" id="nombres" maxlength="80" placeholder="Ej: VICTORIA QUESADA REY">
+
+                <label for="edad">Edad</label>
+                <input type="number" id="edad" placeholder="QUE LA EDAD COINCIDA CON LA FECHA DE NACIMIENTO">
+
+                <label for="fechaNacimiento">Fecha de Nacimiento</label>
+                <input type="date" id="fechaNacimiento" class="inputDate">
+
+                <label for="genero">Género</label>
+                <select id="genero">
+                    <option value="">---Seleccione---</option>
+                    <option value="m">Masculino</option>
+                    <option value="f">Femenino</option>
+                    <option value="o">Otro</option>
+                </select>
+
+                <label for="correo">Correo Electrónico</label>
+                <input type="email" id="correo" placeholder="correo@gmail.com">
+
+                <label for="decripcion">Descripción Personal</label>
+                <textarea id="descripcion" cols="30" rows="10" maxlength="500"
+                    placeholder="Habilidades y experiencia."></textarea>
+
+                <label for="color">Color</label>
+                <select id="color">
+                    <option value="r">Rojo</option>
+                    <option value="a">Azul</option>
+                    <option value="v">Verde</option>
+                </select>
+                <button onclick="capturarDatos();">Capturar Datos</button>
+            </div>
+
+            <div id="avatar" class="cont-avatar">
+                <h2>
+                    SU AVATAR
+                </h2>
+
+                <img id="iconoAvatar" src="img/avatar inicial.jpg">
+
+                <label for="nombresOutput">Nombres: </label>
+                <output id="nombresOutput"></output>
+
+                <label for="edadOutput">Edad: </label>
+                <output id="edadOutput"></output>
+
+                <label for="fechaNacimientoOutput">Fecha de nacimiento: </label>
+                <output id="fechaNacimientoOutput"></output>
+
+                <label for="generoOutput">Género: </label>
+                <output id="generoOutput"></output>
+
+                <label for="correoOutput">Correo: </label>
+                <output id="correoOutput"></output>
+
+                <label for="descripcionOutput">Descripción personal: </label>
+                <textarea id="descripcionOutput" readonly class="textareaOutput"></textarea>
+                
+                <label for="colorOutput">Color: </label>
+                <output id="colorOutput"></output>
+            </div>
+        </div>
+        <div class="fila2">
+            <button onclick="regresarAFiguras();">FIGURAS</button>
+        </div>
+    </div>
+</body>
+
+</html>
